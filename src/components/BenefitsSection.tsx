@@ -53,75 +53,77 @@ const BenefitsSection = () => {
   return (
     <section className="py-20 px-4 bg-gradient-subtle">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Dlaczego szkoły wybierają nasze monitory interaktywne?
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferujemy kompleksowe wsparcie i narzędzia, które sprawiają, że inwestycja w technologię przynosi realne korzyści edukacyjne.
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left side - Benefits list */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Dlaczego szkoły wybierają nasze monitory interaktywne?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Oferujemy kompleksowe wsparcie i narzędzia, które sprawiają, że inwestycja w technologię przynosi realne korzyści edukacyjne.
+            </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <div
-                key={index}
-                className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-foreground font-medium pt-2">{benefit.text}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="bg-primary/5 rounded-3xl p-8 md:p-12 mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
-            Gotowi na zmianę?
-          </h3>
-          <p className="text-center text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Skontaktuj się z naszym zespołem, aby otrzymać bezpłatną konsultację i poznać pełną ofertę dla Twojej szkoły.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="text-center animate-scale-in"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <span className="text-3xl font-bold text-white">{step.number}</span>
-                </div>
-                <h4 className="text-lg font-semibold text-foreground">{step.title}</h4>
-              </div>
-            ))}
+            <ul className="space-y-4">
+              {benefits.map((benefit, index) => {
+                const Icon = benefit.icon;
+                return (
+                  <li
+                    key={index}
+                    className="flex items-start gap-4 animate-fade-in"
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <p className="text-foreground font-medium text-lg pt-2">{benefit.text}</p>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
-          <div className="text-center">
+          {/* Right side - Call to action */}
+          <div className="bg-primary/5 rounded-3xl p-8 md:p-12 lg:sticky lg:top-24">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Gotowi na zmianę?
+            </h3>
+            <p className="text-lg text-muted-foreground mb-10">
+              Skontaktuj się z naszym zespołem, aby otrzymać bezpłatną konsultację i poznać pełną ofertę dla Twojej szkoły.
+            </p>
+
+            <div className="space-y-6 mb-10">
+              {steps.map((step, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-4 animate-scale-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <span className="text-2xl font-bold text-white">{step.number}</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground">{step.title}</h4>
+                </div>
+              ))}
+            </div>
+
             <Button
               onClick={() => scrollToSection("kontakt")}
               size="lg"
               variant="hero"
-              className="shadow-xl"
+              className="w-full shadow-xl"
             >
               Umów bezpłatną konsultację
             </Button>
           </div>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl mt-12">
           <img
             src={benefitsImage}
             alt="Dzieci uczące się z monitorem interaktywnym"
             className="w-full h-auto object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+          <div className="absolute inset-0 bg-black/40 flex items-end p-8">
             <p className="text-white text-xl md:text-2xl font-semibold">
               Interaktywna nauka dla każdego ucznia
             </p>

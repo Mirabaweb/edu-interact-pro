@@ -45,7 +45,7 @@ const WhyUsSection = () => {
                 className="text-center space-y-4 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">

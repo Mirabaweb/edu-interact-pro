@@ -29,8 +29,8 @@ const Hero = () => {
           </div>
 
           <div className="relative animate-scale-in">
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-3xl"></div>
-            <img 
+            <div className="absolute inset-0 bg-secondary/10 rounded-3xl blur-3xl"></div>
+            <img
               src={heroImage} 
               alt="Nauczyciel i uczniowie korzystający z monitora interaktywnego w nowoczesnej klasie"
               className="relative rounded-2xl shadow-xl w-full h-auto object-cover"

@@ -62,7 +62,7 @@ const ProductSection = () => {
             >
               {product.recommended && (
                 <Badge 
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-white px-4 py-1"
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-1"
                 >
                   {product.subtitle}
                 </Badge>
