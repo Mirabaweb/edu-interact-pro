@@ -23,15 +23,15 @@ All colors MUST be HSL.
     --primary-light: 221 83% 65%;
     --primary-dark: 221 83% 40%;
 
-    /* Growth green - development & progress */
-    --secondary: 160 84% 39%;
+    /* Vibrant orange - energy & engagement */
+    --secondary: 25 95% 53%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 160 84% 50%;
+    --secondary-light: 25 95% 63%;
 
     --muted: 220 13% 95%;
     --muted-foreground: 220 9% 46%;
 
-    --accent: 160 84% 39%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,8 +43,8 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Educational gradient */
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(160 84% 39%));
+    /* Educational gradient with orange accent */
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(25 95% 53%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 13% 98%));
     
     /* Shadows */

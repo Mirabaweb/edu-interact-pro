@@ -1,7 +1,9 @@
 import { Lock, BookOpen } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import monitorFeature from "@/assets/monitor-feature.jpg";
+import blog1 from "@/assets/blog-1.jpg";
+import blog2 from "@/assets/blog-2.jpg";
+import blog3 from "@/assets/blog-3.jpg";
 
 const BlogSection = () => {
   const articles = [
@@ -9,19 +11,19 @@ const BlogSection = () => {
       id: 1,
       title: "Jak wybrać monitor interaktywny dla szkoły?",
       description: "Kompleksowy poradnik wyboru odpowiedniego monitora interaktywnego dostosowanego do potrzeb Twojej placówki.",
-      image: monitorFeature,
+      image: blog1,
     },
     {
       id: 2,
       title: "5 sposobów na wykorzystanie monitora w klasie",
       description: "Praktyczne pomysły na wykorzystanie technologii interaktywnej w codziennym nauczaniu.",
-      image: monitorFeature,
+      image: blog2,
     },
     {
       id: 3,
       title: "Montaż i konfiguracja - co warto wiedzieć?",
       description: "Wszystko o procesie instalacji monitora interaktywnego i przygotowaniu sali lekcyjnej.",
-      image: monitorFeature,
+      image: blog3,
     },
   ];
 
