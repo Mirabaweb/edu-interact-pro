@@ -1,12 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ProductSection from "@/components/ProductSection";
+import BlogSection from "@/components/BlogSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import WelcomeModal from "@/components/WelcomeModal";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Interaktywne Pracownie - Monitory Interaktywne dla Szkół";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Profesjonalne monitory interaktywne dla szkół i przedszkoli. Monitor interaktywny 65 i 85 cali z montażem i szkoleniem. Kompleksowa obsługa dla placówek edukacyjnych."
+      );
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <WelcomeModal />
+      <Header />
+      <main>
+        <Hero />
+        <WhyUsSection />
+        <ProductSection />
+        <BlogSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
