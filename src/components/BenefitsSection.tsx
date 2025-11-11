@@ -72,7 +72,7 @@ const BenefitsSection = () => {
                     className="flex items-start gap-4 animate-fade-in"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
-                    <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#FF7A00' }}>
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <p className="text-foreground font-medium text-lg pt-2">{benefit.text}</p>
@@ -98,7 +98,7 @@ const BenefitsSection = () => {
                   className="flex items-center gap-4 animate-scale-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg" style={{ backgroundColor: '#FF7A00' }}>
                     <span className="text-2xl font-bold text-white">{step.number}</span>
                   </div>
                   <h4 className="text-lg font-semibold text-foreground">{step.title}</h4>
@@ -109,7 +109,8 @@ const BenefitsSection = () => {
             <Button
               onClick={() => scrollToSection("kontakt")}
               size="lg"
-              className="w-full shadow-xl bg-primary text-primary-foreground hover:bg-primary-dark"
+              className="w-full shadow-xl text-white hover:opacity-90"
+              style={{ backgroundColor: '#FF7A00' }}
             >
               Umów bezpłatną konsultację
             </Button>

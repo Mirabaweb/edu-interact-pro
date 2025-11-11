@@ -70,7 +70,12 @@ const Oferta = () => {
   ];
 
   const scrollToContact = () => {
-    window.location.href = "/#kontakt";
+    if (window.location.pathname === '/') {
+      const element = document.getElementById('kontakt');
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/#kontakt';
+    }
   };
 
   return (

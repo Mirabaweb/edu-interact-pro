@@ -1,4 +1,4 @@
-import { Lock, BookOpen } from "lucide-react";
+import { BookOpen, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import blog1 from "@/assets/blog-1.jpg";
@@ -9,18 +9,21 @@ const BlogSection = () => {
   const articles = [
     {
       id: 1,
+      slug: "jak-wybrac-monitor-interaktywny",
       title: "Jak wybrać monitor interaktywny dla szkoły?",
       description: "Kompleksowy poradnik wyboru odpowiedniego monitora interaktywnego dostosowanego do potrzeb Twojej placówki.",
       image: blog1,
     },
     {
       id: 2,
+      slug: "5-sposobow-na-wykorzystanie-monitora",
       title: "5 sposobów na wykorzystanie monitora w klasie",
       description: "Praktyczne pomysły na wykorzystanie technologii interaktywnej w codziennym nauczaniu.",
       image: blog2,
     },
     {
       id: 3,
+      slug: "montaz-i-konfiguracja",
       title: "Montaż i konfiguracja - co warto wiedzieć?",
       description: "Wszystko o procesie instalacji monitora interaktywnego i przygotowaniu sali lekcyjnej.",
       image: blog3,
@@ -38,8 +41,7 @@ const BlogSection = () => {
             </h2>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Dowiedz się, jak nowoczesne technologie wspierają proces nauczania. 
-            Zaloguj się, aby uzyskać dostęp do artykułów, poradników i analiz.
+            Dowiedz się, jak nowoczesne technologie wspierają proces nauczania
           </p>
         </div>
 
@@ -56,9 +58,6 @@ const BlogSection = () => {
                   alt={article.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Lock className="w-12 h-12 text-white" />
-                </div>
               </div>
               
               <CardHeader>
@@ -67,12 +66,27 @@ const BlogSection = () => {
               </CardHeader>
 
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Zaloguj się, aby czytać
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open(`/blog/${article.slug}`, '_blank')}
+                >
+                  Czytaj artykuł
                 </Button>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button 
+            size="lg"
+            onClick={() => window.open('/blog', '_blank')}
+            className="gap-2"
+          >
+            Czytaj więcej na blogu
+            <ArrowRight className="w-5 h-5" />
+          </Button>
         </div>
       </div>
     </section>
