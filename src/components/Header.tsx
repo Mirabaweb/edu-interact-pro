@@ -31,12 +31,12 @@ const Header = () => {
             >
               O nas
             </button>
-            <button 
-              onClick={() => scrollToSection("oferta")}
+            <a 
+              href="/oferta"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Oferta
-            </button>
+            </a>
             <button 
               onClick={() => scrollToSection("blog")}
               className="text-foreground hover:text-primary transition-colors font-medium"

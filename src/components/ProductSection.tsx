@@ -23,12 +23,12 @@ const ProductSection = () => {
     },
     {
       id: 2,
-      name: "Monitor interaktywny 85 cali",
+      name: "Monitor interaktywny 86 cali",
       subtitle: "Wersja premium",
       price: "14 500 zł",
       description: "Dla większych klas i sal konferencyjnych – profesjonalny zestaw z rozszerzonym wsparciem.",
       features: [
-        "Monitor interaktywny 85 cali",
+        "Monitor interaktywny 86 cali",
         "Profesjonalny montaż",
         "Rozszerzone szkolenie kadry",
         "Wsparcie techniczne przez 24 miesiące",
@@ -55,7 +55,7 @@ const ProductSection = () => {
           {products.map((product, index) => (
             <Card 
               key={product.id} 
-              className={`relative hover:shadow-xl transition-all duration-300 ${
+              className={`relative hover:shadow-xl transition-all duration-300 flex flex-col ${
                 product.recommended ? 'border-2 border-primary shadow-lg' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -77,7 +77,7 @@ const ProductSection = () => {
                 )}
               </CardHeader>
 
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 flex-grow">
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-3">
                     <span className="text-4xl font-bold text-foreground">

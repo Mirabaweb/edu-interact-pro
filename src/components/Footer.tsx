@@ -1,4 +1,5 @@
 import { Facebook, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -11,10 +12,8 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">IP</span>
-              </div>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="Interaktywne Pracownie" className="h-14 w-14" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight">
                   Interaktywne
