@@ -49,11 +49,11 @@ const WelcomeModal = () => {
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-foreground">
-            🎬 Zobacz cały proces w 90 sekund!
+            🎬 Zobacz rozwiązania dla edukacji i biznesu!
           </DialogTitle>
           <DialogDescription className="text-muted-foreground pt-2">
-            Podaj swój e-mail, a otrzymasz bezpłatny film pokazujący jak wygląda cały proces: 
-            doradztwo, wybór, instalacja i szkolenie nauczycieli.
+            Podaj swój e-mail, a otrzymasz bezpłatny film pokazujący jak monitory interaktywne rewolucjonizują 
+            nauczanie w szkołach i prezentacje biznesowe w firmach.
           </DialogDescription>
         </DialogHeader>
         
@@ -87,7 +87,7 @@ const WelcomeModal = () => {
             <Input
               id="email"
               type="email"
-              placeholder="jan.kowalski@szkola.pl"
+              placeholder="jan.kowalski@firma.pl"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required

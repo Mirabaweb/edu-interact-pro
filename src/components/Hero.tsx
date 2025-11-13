@@ -16,7 +16,7 @@ const Hero = () => {
               Nowoczesne monitory interaktywne dla edukacji i biznesu
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Poznaj rozwiązania, które ułatwiają nauczanie i angażują uczniów każdego dnia.
+              Zwiększ efektywność nauczania i profesjonalizm prezentacji biznesowych dzięki nowoczesnym technologiom interaktywnym.
             </p>
             <Button 
               onClick={() => scrollToSection("kontakt")}

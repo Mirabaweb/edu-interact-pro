@@ -42,16 +42,16 @@ const WhyUsSection = () => {
             return (
               <div 
                 key={index}
-                className="text-center space-y-4 animate-fade-in"
+                className="space-y-4 animate-fade-in flex flex-col items-center"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center shadow-lg">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
+                <h3 className="text-xl font-semibold text-foreground text-center px-4 min-h-[3.5rem] flex items-center justify-center">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-center">
                   {feature.description}
                 </p>
               </div>
