@@ -15,9 +15,10 @@ const ProductSection = () => {
       features: [
         "Monitor interaktywny 65 cali",
         "Profesjonalny montaż",
-        "Szkolenie kadry pedagogicznej",
+        "Szkolenie kadry",
         "Wsparcie techniczne przez 12 miesięcy",
-        "Instrukcja obsługi po polsku",
+        "Oprogramowanie edukacyjne w zestawie",
+        "Gwarancja 3 lata",
       ],
       recommended: true,
     },
@@ -32,6 +33,7 @@ const ProductSection = () => {
         "Profesjonalny montaż",
         "Rozszerzone szkolenie kadry",
         "Wsparcie techniczne przez 24 miesiące",
+        "Dodatkowe akcesoria (kamera, pilot, głośniki)",
         "Dedykowany opiekun techniczny",
         "Dostęp do zaawansowanych funkcji",
       ],
@@ -47,7 +49,7 @@ const ProductSection = () => {
             Nasza oferta
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Wybierz rozwiązanie dopasowane do potrzeb Twojej szkoły
+            Wybierz rozwiązanie dopasowane do potrzeb Twojej organizacji
           </p>
         </div>
 

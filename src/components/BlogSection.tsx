@@ -49,7 +49,7 @@ const BlogSection = () => {
           {articles.map((article, index) => (
             <Card 
               key={article.id}
-              className="hover:shadow-lg transition-all duration-300 group"
+              className="hover:shadow-lg transition-all duration-300 group flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden rounded-t-lg">
@@ -60,12 +60,12 @@ const BlogSection = () => {
                 />
               </div>
               
-              <CardHeader>
+              <CardHeader className="flex-grow">
                 <CardTitle className="text-xl">{article.title}</CardTitle>
                 <CardDescription>{article.description}</CardDescription>
               </CardHeader>
 
-              <CardContent>
+              <CardContent className="pt-0">
                 <Button 
                   variant="outline" 
                   className="w-full"

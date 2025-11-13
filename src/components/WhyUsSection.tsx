@@ -4,8 +4,8 @@ const WhyUsSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "Doradztwo dopasowane do potrzeb szkół",
-      description: "Pomożemy wybrać najlepsze rozwiązanie dla Twojej placówki, uwzględniając budżet i specyfikę zajęć.",
+      title: "Doradztwo dopasowane do potrzeb",
+      description: "Pomożemy wybrać najlepsze rozwiązanie dla Twojej organizacji, uwzględniając budżet i specyfikę.",
     },
     {
       icon: Wrench,
@@ -14,8 +14,8 @@ const WhyUsSection = () => {
     },
     {
       icon: GraduationCap,
-      title: "Szkolenie kadry pedagogicznej",
-      description: "Przeszkolimy nauczycieli, aby w pełni wykorzystali potencjał technologii interaktywnej.",
+      title: "Szkolenie kadry",
+      description: "Przeszkolimy Twoich pracowników, aby w pełni wykorzystali potencjał technologii interaktywnej.",
     },
     {
       icon: Headphones,

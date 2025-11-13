@@ -5,19 +5,20 @@ import ProductSection from "@/components/ProductSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import BlogSection from "@/components/BlogSection";
 import WhyUsSection from "@/components/WhyUsSection";
+import BusinessSection from "@/components/BusinessSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WelcomeModal from "@/components/WelcomeModal";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Interaktywne Pracownie - Monitory Interaktywne dla Szkół";
+    document.title = "Interaktywne Pracownie - Monitory Interaktywne dla Edukacji i Biznesu";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Profesjonalne monitory interaktywne dla szkół i przedszkoli. Monitor interaktywny 65 i 85 cali z montażem i szkoleniem. Kompleksowa obsługa dla placówek edukacyjnych."
+        "Profesjonalne monitory interaktywne dla edukacji i biznesu. Monitor interaktywny 65 i 86 cali z montażem i szkoleniem. Kompleksowa obsługa dla placówek edukacyjnych i firm."
       );
     }
   }, []);
@@ -30,6 +31,7 @@ const Index = () => {
         <Hero />
         <WhyUsSection />
         <ProductSection />
+        <BusinessSection />
         <BlogSection />
         <BenefitsSection />
         <ContactSection />

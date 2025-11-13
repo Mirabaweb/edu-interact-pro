@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Nowoczesne monitory interaktywne dla szkół i przedszkoli
+              Nowoczesne monitory interaktywne dla edukacji i biznesu
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Poznaj rozwiązania, które ułatwiają nauczanie i angażują uczniów każdego dnia.

@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/80 text-sm">
-              Technologia, która rozwija edukację
+              Innowacyjne rozwiązania dla edukacji i biznesu
             </p>
           </div>
 

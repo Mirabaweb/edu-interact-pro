@@ -1,6 +1,6 @@
 import { Check, Users, Monitor, Clock, Palette, GraduationCap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import benefitsImage from "@/assets/benefits-image.jpg";
+import benefitsImage from "@/assets/university-lecture.jpg";
 
 const BenefitsSection = () => {
   const benefits = [
@@ -57,10 +57,10 @@ const BenefitsSection = () => {
           {/* Left side - Benefits list */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Dlaczego szkoły wybierają nasze monitory interaktywne?
+              Dlaczego placówki edukacyjne i firmy wybierają nasze monitory interaktywne?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Oferujemy kompleksowe wsparcie i narzędzia, które sprawiają, że inwestycja w technologię przynosi realne korzyści edukacyjne.
+              Oferujemy kompleksowe wsparcie i narzędzia, które sprawiają, że inwestycja w technologię przynosi realne korzyści.
             </p>
 
             <ul className="space-y-4">
@@ -88,7 +88,7 @@ const BenefitsSection = () => {
               Gotowi na zmianę?
             </h3>
             <p className="text-lg text-muted-foreground mb-10">
-              Skontaktuj się z naszym zespołem, aby otrzymać bezpłatną konsultację i poznać pełną ofertę dla Twojej szkoły.
+              Skontaktuj się z naszym zespołem, aby otrzymać bezpłatną konsultację i poznać pełną ofertę dla Twojej organizacji.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -120,12 +120,12 @@ const BenefitsSection = () => {
         <div className="relative rounded-3xl overflow-hidden shadow-2xl mt-12">
           <img
             src={benefitsImage}
-            alt="Dzieci uczące się z monitorem interaktywnym"
+            alt="Wykładowca uniwersytecki prowadzący zajęcia z monitorem interaktywnym"
             className="w-full h-auto object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-end p-8">
             <p className="text-white text-xl md:text-2xl font-semibold">
-              Interaktywna nauka dla każdego ucznia
+              Nowoczesne wykłady i prezentacje biznesowe
             </p>
           </div>
         </div>
